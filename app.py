@@ -1,3 +1,11 @@
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+	return "Hello World!"
+
 file_location = getenv("MSG_FILE_LOCATION", "msg.txt")
 
 @app.route("/", methods=["GET", "POST"])
