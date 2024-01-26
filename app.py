@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-file_location = getenv("MSG_FILE_LOCATION", "msg.txt")
+file_location = getenv("msg.txt", "msg.txt")
 
 @app.route("/", methods=["GET", "POST"])
 def hello():
