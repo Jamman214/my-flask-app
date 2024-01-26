@@ -19,10 +19,10 @@ jobs:
 			
 	# the steps that this job consists of
     steps:
-	  - name: Checkout  # check out our repo
+	        - name: Checkout  # check out our repo
       uses: actions/checkout@v3
 	  
-	  - name: Log in to the container registry
+	        - name: Log in to the container registry
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
