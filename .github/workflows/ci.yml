@@ -13,9 +13,9 @@ jobs:
     name: Build and Push Container Image # the job's full name
     runs-on: ubuntu-latest # the OS that this job runs on
 		
-	  # we need write permissions to publish the package
-    permissions: 
-      packages: write
+  # we need write permissions to publish the package
+  permissions: 
+    packages: write
 			
 	  # the steps that this job consists of
     steps:
